@@ -1,0 +1,3185 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API Daily Monitoring</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">API Daily Monitoring Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 23, 2024 09:01:19 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">HistoryAPI</a><a class="dropdown-item" href="#">DepthAPI</a><a class="dropdown-item" href="#">QuotesAPI</a><a class="dropdown-item" href="#">OrdersAPI</a><a class="dropdown-item" href="#">HoldingsAPI</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="DepthAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: depthApiTest</p>
+            <p class="text-sm">
+              <span>9:01:19 am</span> / <span>00:00:01:692</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: depthApiTest</h5>
+<span class='badge badge-success'>05.23.2024 9:01:19 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:01:692</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">DepthAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t2.fyers.in/vagator/v2/send_login_otp</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"fy_id":"YV02791","app_id":"2"}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:20 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>Access-Control-Allow-Methods</td><td>OPTIONS, GET, POST, PUT</td></tr><tr><td>Access-Control-Allow-Headers</td><td>*</td></tr><tr><td>Accept-Encoding</td><td>gzip, deflate, br</td></tr><tr><td>Content-Security-Policy</td><td>script-src 'self' ; img-src 'self' data: ; object-src 'self' data: ; frame-src 'self' data: ; form-action 'self' data: ; worker-src 'self' data: ;</td></tr><tr><td>Referrer-Policy</td><td>{'origin', 'no-referrer-when-downgrade', 'same-origin', 'strict-origin', 'strict-origin-when-cross-origin', 'no-referrer', 'unsafe-url', 'origin-when-cross-origin'}</td></tr><tr><td>Permissions-Policy</td><td>geolocation=(self)</td></tr><tr><td>X-Frame-Options</td><td>DENY</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=8cND9Ml7vabKXNQX7iWbDv6oRp3by1XYB8Q53osa8HQ-1716435080-1.0.1.1-lCEHIjwZjs.0So..nDTYmUWlAqZkeyQfWOIZ.JWJ_p3JLbzo7mQnhX0g_6feqSla1lpVkZm7qX9uYn_8jAF.XA; path=/; expires=Thu, 23-May-24 04:01:20 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8f2fb091d39-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "s": "ok",
+    "code": 1043,
+    "message": "otp has been successfully sent",
+    "mobile_no": "63xxxxxx10",
+    "email_id": "vxxxxxxxxxxxa@gmail.com",
+    "request_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0X2tleSI6IkRBZHNyaTFJQWVjUnQxR0pCYWZjeWVUNTBpeXJtanB2TmxJMHJRVGJ3RkM2ZTNjVTVzIiwic3ViIjoib3RwX2xvZ2luIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwX2lkIjoiMiIsImNsaWVudF9uYW1lIjoiVnJ1c2hhYmVuZHJhIFJ1ZHJheXlhIENoaWtrYW1hdGgiLCJpYXQiOjE3MTY0MzUwODAsImV4cCI6MTcxNjQzNTk4MCwibmJmIjoxNzE2NDM1MDgwfQ.wtA9DpuQqM9eUuGbbDs7qg1OmdgcUuF7a2Ar07I4rI0",
+    "client_name": "Vrushabendra Rudrayya Chikkamath",
+    "nick_name": "Vrushabendra",
+    "avatar_link": null,
+    "totp_enabled": false
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t2.fyers.in/vagator/v2/verify_otp</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"otp":"000000","request_key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0X2tleSI6IkRBZHNyaTFJQWVjUnQxR0pCYWZjeWVUNTBpeXJtanB2TmxJMHJRVGJ3RkM2ZTNjVTVzIiwic3ViIjoib3RwX2xvZ2luIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwX2lkIjoiMiIsImNsaWVudF9uYW1lIjoiVnJ1c2hhYmVuZHJhIFJ1ZHJheXlhIENoaWtrYW1hdGgiLCJpYXQiOjE3MTY0MzUwODAsImV4cCI6MTcxNjQzNTk4MCwibmJmIjoxNzE2NDM1MDgwfQ.wtA9DpuQqM9eUuGbbDs7qg1OmdgcUuF7a2Ar07I4rI0"}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:20 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>Access-Control-Allow-Methods</td><td>OPTIONS, GET, POST, PUT</td></tr><tr><td>Access-Control-Allow-Headers</td><td>*</td></tr><tr><td>Accept-Encoding</td><td>gzip, deflate, br</td></tr><tr><td>Content-Security-Policy</td><td>script-src 'self' ; img-src 'self' data: ; object-src 'self' data: ; frame-src 'self' data: ; form-action 'self' data: ; worker-src 'self' data: ;</td></tr><tr><td>Referrer-Policy</td><td>{'unsafe-url', 'no-referrer', 'strict-origin-when-cross-origin', 'no-referrer-when-downgrade', 'same-origin', 'strict-origin', 'origin', 'origin-when-cross-origin'}</td></tr><tr><td>Permissions-Policy</td><td>geolocation=(self)</td></tr><tr><td>X-Frame-Options</td><td>DENY</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=uoeIm8D7hFfcmu4z8Wr55yMeRCqG6p.RMfwQlfNXZ_o-1716435080-1.0.1.1-oLKWW3wE47C5aw_kO_H2sAd2ss2QpFzUx_12FXmwHYPjIp3Prs3LPDfovIiSwlBAHuTnk3ucus4FtKxMn5Wrjg; path=/; expires=Thu, 23-May-24 04:01:20 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8f47e4c26b9-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "s": "ok",
+    "code": 2,
+    "request_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTY0MzUwODAsImV4cCI6MTcxNjUyMTQ4MCwibmJmIjoxNzE2NDM1MDgwLCJmeV9pZCI6IllWMDI3OTEiLCJyZXF1ZXN0X2tleSI6InBBd29PY01IeFFVQUNaanhpZ05RaTZPdmRKb0JlN1NXamprTkM5cmVZc2hHVjZVUUhXIn0.Yz64WTXzHv3T0xYdWKFqNRsOE7j61rMf7hqTJzaGu0s",
+    "client_name": "Vrushabendra Rudrayya Chikkamath",
+    "nick_name": "Vrushabendra",
+    "pin_created": true,
+    "message": "fy_id and OTP verified successfully"
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t2.fyers.in/vagator/v2/verify_pin</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({"identifier":"0000","identity_type":"pin","request_key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTY0MzUwODAsImV4cCI6MTcxNjUyMTQ4MCwibmJmIjoxNzE2NDM1MDgwLCJmeV9pZCI6IllWMDI3OTEiLCJyZXF1ZXN0X2tleSI6InBBd29PY01IeFFVQUNaanhpZ05RaTZPdmRKb0JlN1NXamprTkM5cmVZc2hHVjZVUUhXIn0.Yz64WTXzHv3T0xYdWKFqNRsOE7j61rMf7hqTJzaGu0s"}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:20 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>Access-Control-Allow-Methods</td><td>OPTIONS, GET, POST, PUT</td></tr><tr><td>Access-Control-Allow-Headers</td><td>*</td></tr><tr><td>Accept-Encoding</td><td>gzip, deflate, br</td></tr><tr><td>Content-Security-Policy</td><td>script-src 'self' ; img-src 'self' data: ; object-src 'self' data: ; frame-src 'self' data: ; form-action 'self' data: ; worker-src 'self' data: ;</td></tr><tr><td>Referrer-Policy</td><td>{'same-origin', 'unsafe-url', 'strict-origin-when-cross-origin', 'origin-when-cross-origin', 'no-referrer', 'no-referrer-when-downgrade', 'strict-origin', 'origin'}</td></tr><tr><td>Permissions-Policy</td><td>geolocation=(self)</td></tr><tr><td>X-Frame-Options</td><td>DENY</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=BoDk9zb5FEw5TcNHPqEns3CoSUmJJn0gPDJZFKjgPo8-1716435080-1.0.1.1-KbbxrUIwCySmGua0rvxKdS_yOpdPLoZMDTThFQQNP.Cd3q0V6nf7u0ifzCCtsSvaDoHbntm9QIAczXDWcHLQPA; path=/; expires=Thu, 23-May-24 04:01:20 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8f548c61d9d-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "s": "ok",
+    "code": 1004,
+    "message": "Pin is Verified",
+    "data": {
+        "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmZ5ZXJzLmluIiwiaWF0IjoxNzE2NDM1MDgwLCJleHAiOjE3MjQyMTEwODAsIm5iZiI6MTcxNjQzNTA4MCwiYXVkIjpbIng6MCIsIng6MSIsIng6MiIsImQ6MSJdLCJzdWIiOiJyZWZyZXNoX3Rva2VuIiwiYXRfaGFzaCI6ImdBQUFBQUJtVHJpSTdiMUgxSzJMRTgtQjVtQTQ1RG5tajI3RlZlVTNza1JfaUVvVUptdnZtdnE3blVLRzRyVi1LWWZDVlcxUjNRZHlNTEhXV3NzejZyUVl2dlBRWjJ0UmZLWkxkQWh3Vk41cDB1ZzFQdHhxQUVrPSIsImRpc3BsYXlfbmFtZSI6IlZSVVNIQUJFTkRSQSBSVURSQVlZQSBDSElLS0FNQVRIIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6IiIsInBvYV9mbGFnIjoiTiIsImlzTXRmRW5hYmxlZCI6Ik4iLCJpc0RkcGlFbmFibGVkIjoiTiJ9.D7_6Pm6K04ndw-hhhgT8sKLmuN0iL4BEzCL0WxeJNOU",
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmZ5ZXJzLmluIiwiaWF0IjoxNzE2NDM1MDgwLCJleHAiOjE3MTY1MTA2MjAsIm5iZiI6MTcxNjQzNTA4MCwiYXVkIjpbIng6MCIsIng6MSIsIng6MiIsImQ6MSJdLCJzdWIiOiJhY2Nlc3NfdG9rZW4iLCJhdF9oYXNoIjoiZ0FBQUFBQm1UcmlJN2IxSDFLMkxFOC1CNW1BNDVEbm1qMjdGVmVVM3NrUl9pRW9VSm12dm12cTduVUtHNHJWLUtZZkNWVzFSM1FkeU1MSFdXc3N6NnJRWXZ2UFFaMnRSZktaTGRBaHdWTjVwMHVnMVB0eHFBRWs9IiwiZGlzcGxheV9uYW1lIjoiVlJVU0hBQkVORFJBIFJVRFJBWVlBIENISUtLQU1BVEgiLCJmeV9pZCI6IllWMDI3OTEiLCJhcHBUeXBlIjoiIiwicG9hX2ZsYWciOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIn0.wkOktXaZzEh41ZXKcAYGfjxmYe3tIXF0fYnNcoTnlUs"
+    }
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api.fyers.in/api/v2/token</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmZ5ZXJzLmluIiwiaWF0IjoxNzE2NDM1MDgwLCJleHAiOjE3MTY1MTA2MjAsIm5iZiI6MTcxNjQzNTA4MCwiYXVkIjpbIng6MCIsIng6MSIsIng6MiIsImQ6MSJdLCJzdWIiOiJhY2Nlc3NfdG9rZW4iLCJhdF9oYXNoIjoiZ0FBQUFBQm1UcmlJN2IxSDFLMkxFOC1CNW1BNDVEbm1qMjdGVmVVM3NrUl9pRW9VSm12dm12cTduVUtHNHJWLUtZZkNWVzFSM1FkeU1MSFdXc3N6NnJRWXZ2UFFaMnRSZktaTGRBaHdWTjVwMHVnMVB0eHFBRWs9IiwiZGlzcGxheV9uYW1lIjoiVlJVU0hBQkVORFJBIFJVRFJBWVlBIENISUtLQU1BVEgiLCJmeV9pZCI6IllWMDI3OTEiLCJhcHBUeXBlIjoiIiwicG9hX2ZsYWciOiJOIiwiaXNNdGZFbmFibGVkIjoiTiIsImlzRGRwaUVuYWJsZWQiOiJOIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIn0.wkOktXaZzEh41ZXKcAYGfjxmYe3tIXF0fYnNcoTnlUs</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({"appType":"100","scope":"","fyers_id":"YV02791","response_type":"code","create_cookie":"true","redirect_uri":"https://trade.fyers.in/api-login/redirect-uri/index.html","state":"sample_state","app_id":"E30OQX14VP","nonce":"","code_challenge":""}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 308</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Server</td><td>awselb/2.0</td></tr><tr><td>Date</td><td>Thu, 23 May 2024 03:31:20 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>753</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Access-Control-Allow-Headers</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Cache-Control</td><td>max-age=10</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create({
+    "s": "ok",
+    "code": 308,
+    "message": "",
+    "cookie": null,
+    "Url": "https://trade.fyers.in/api-login/redirect-uri/index.html?s=ok&code=200&auth_code=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkubG9naW4uZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODAsImV4cCI6MTcxNjQ2NTA4MCwibmJmIjoxNzE2NDM0NDgwLCJhdWQiOiJbXCJ4OjBcIiwgXCJ4OjFcIiwgXCJ4OjJcIiwgXCJkOjFcIiwgXCJkOjJcIiwgXCJ4OjFcIiwgXCJ4OjBcIl0iLCJzdWIiOiJhdXRoX2NvZGUiLCJkaXNwbGF5X25hbWUiOiJZVjAyNzkxIiwib21zIjoiSzEiLCJoc21fa2V5IjoiMmUyMDMwMDlkODc0YTZiNzUxODE3ZmM1MzNkNWZiZmIyMWE2MWIyOTA1ZTczYTdiYWNiNjQzZGUiLCJub25jZSI6IiIsImFwcF9pZCI6IkUzME9RWDE0VlAiLCJ1dWlkIjoiM2Y3M2MxMTUyMTg4NDc2N2EwY2Y2NmVjYWRlZGE1N2IiLCJpcEFkZHIiOiIwLjAuMC4wIiwic2NvcGUiOiIifQ.fIvNZAmxoWxQ020Ayo3-S02me5xjhVulPr-EKBAgezw&state=sample_state"
+}); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/api/v3/validate-authcode</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-8'></div>
+ <script>
+  function jsonTreeCreate8() { 
+   document.getElementById('code-block-json-8').innerHTML = JSONTree.create({"code":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkubG9naW4uZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODAsImV4cCI6MTcxNjQ2NTA4MCwibmJmIjoxNzE2NDM0NDgwLCJhdWQiOiJbXCJ4OjBcIiwgXCJ4OjFcIiwgXCJ4OjJcIiwgXCJkOjFcIiwgXCJkOjJcIiwgXCJ4OjFcIiwgXCJ4OjBcIl0iLCJzdWIiOiJhdXRoX2NvZGUiLCJkaXNwbGF5X25hbWUiOiJZVjAyNzkxIiwib21zIjoiSzEiLCJoc21fa2V5IjoiMmUyMDMwMDlkODc0YTZiNzUxODE3ZmM1MzNkNWZiZmIyMWE2MWIyOTA1ZTczYTdiYWNiNjQzZGUiLCJub25jZSI6IiIsImFwcF9pZCI6IkUzME9RWDE0VlAiLCJ1dWlkIjoiM2Y3M2MxMTUyMTg4NDc2N2EwY2Y2NmVjYWRlZGE1N2IiLCJpcEFkZHIiOiIwLjAuMC4wIiwic2NvcGUiOiIifQ.fIvNZAmxoWxQ020Ayo3-S02me5xjhVulPr-EKBAgezw","grant_type":"authorization_code","appIdHash":"d00054f0adfd31c55971f6ce7d0c5090e85205a39b92bf64845f1de1bb5d6904"}); 
+  }
+  jsonTreeCreate8();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:21 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Access-Control-Allow-Headers, version</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Cache-Control</td><td>max-age=10</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=swRQWQeHl6CZoJfuWFu4Xulvu3j023HfB8w4760Zn28-1716435081-1.0.1.1-JJOf96Nwag3lp6LUTWJxnR5rOnVmpuDXFoUTnYRzz77GW..3cWIEJn6ak0ejFp59FocUzhAb0QwV9qVJixT2WQ; path=/; expires=Thu, 23-May-24 04:01:21 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8f84bda1d89-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:20 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-9'></div>
+ <script>
+  function jsonTreeCreate9() { 
+   document.getElementById('code-block-json-9').innerHTML = JSONTree.create({
+    "s": "ok",
+    "code": 200,
+    "message": "",
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg",
+    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNzcyMDIyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6InJlZnJlc2hfdG9rZW4iLCJhdF9oYXNoIjoiZ0FBQUFBQm1UcmlKdHdjOXFzeVB6WmE3RExzdzhPbFkzNjRZVUZsSzMxVDQ3QWUxbEVVNFVQYjR3aGFBeFZQbHBJZ2V1ektHSUhVcVdyODRFbHlCOUpKOFI0MFZxY2cwYjJEOFJmSjhDMTFwU1VVTGRxN05qd3c9IiwiZGlzcGxheV9uYW1lIjoiVlJVU0hBQkVORFJBIFJVRFJBWVlBIENISUtLQU1BVEgiLCJvbXMiOiJLMSIsImhzbV9rZXkiOiIyZTIwMzAwOWQ4NzRhNmI3NTE4MTdmYzUzM2Q1ZmJmYjIxYTYxYjI5MDVlNzNhN2JhY2I2NDNkZSIsImZ5X2lkIjoiWVYwMjc5MSIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.-t-5B93HuYeuDkjs5zT4Hl2Qu6y5ZnKatXcJnOuu6Bo"
+}); 
+  }
+  jsonTreeCreate9();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/data/depth</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {symbol=NSE:SBIN-EQ, ohlcv_flag=1}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:21 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=TlkTjY7JpQIksKeDIjMyZpglcTjJ_6oDlaacRI5rPGA-1716435081-1.0.1.1-zTzp8CxwP_1lR1tLfK9FfWszPs.UiBwcmee7rYVmQ.B5OE4iFI2ymt0yVdaJI6Wiez6dF18FrXAlbqY72ktrGg; path=/; expires=Thu, 23-May-24 04:01:21 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8f94cb61d89-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-11'></div>
+ <script>
+  function jsonTreeCreate11() { 
+   document.getElementById('code-block-json-11').innerHTML = JSONTree.create({
+    "d": {
+        "NSE:SBIN-EQ": {
+            "totalbuyqty": 96998,
+            "totalsellqty": 175375,
+            "ask": [
+                {
+                    "price": 777.85,
+                    "volume": 1785,
+                    "ord": 4
+                },
+                {
+                    "price": 794.2,
+                    "volume": 36,
+                    "ord": 1
+                },
+                {
+                    "price": 798.25,
+                    "volume": 1,
+                    "ord": 1
+                },
+                {
+                    "price": 800,
+                    "volume": 1,
+                    "ord": 1
+                },
+                {
+                    "price": 0,
+                    "volume": 1400,
+                    "ord": 35
+                }
+            ],
+            "bids": [
+                {
+                    "price": 900,
+                    "volume": 10,
+                    "ord": 1
+                },
+                {
+                    "price": 880,
+                    "volume": 260,
+                    "ord": 1
+                },
+                {
+                    "price": 875,
+                    "volume": 1,
+                    "ord": 1
+                },
+                {
+                    "price": 870,
+                    "volume": 200,
+                    "ord": 1
+                },
+                {
+                    "price": 0,
+                    "volume": 10628,
+                    "ord": 246
+                }
+            ],
+            "o": 826.1,
+            "h": 818.75,
+            "l": 818.75,
+            "c": 818.75,
+            "chp": 0,
+            "tick_Size": 0.05,
+            "ch": 0,
+            "ltq": 45,
+            "ltt": 1716373784,
+            "ltp": 818.75,
+            "v": 0,
+            "atp": 819.27,
+            "lower_ckt": 736.9,
+            "upper_ckt": 900.6,
+            "expiry": "",
+            "oi": 0,
+            "oiflag": false,
+            "pdoi": 0,
+            "oipercent": 0
+        }
+    },
+    "message": "Success",
+    "s": "ok"
+}); 
+  }
+  jsonTreeCreate11();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>depthApiTest is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="HistoryAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: historyApiTest</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:137</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: historyApiTest</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:00:137</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HistoryAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/data/history</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {symbol=NSE:SBIN-EQ, range_from=2024-05-18, date_format=1, resolution=30, range_to=2024-05-23}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:21 GMT</td></tr><tr><td>Content-Type</td><td>application/json; charset=utf-8</td></tr><tr><td>Content-Length</td><td>585</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>Vary</td><td>Accept-Encoding</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=dquHutZwXIfR7l8SF2is0XWqMfVGBUysKSyaZWxGCQM-1716435081-1.0.1.1-AQgXBxwohFSJ1PtnbV6B31zcG9VQNVWEGl3EbpyglM37cBTBeVWIZptNqyyLun5lJsgmZxMw6_Q.432Fi7Tiew; path=/; expires=Thu, 23-May-24 04:01:21 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8fa2b7b26b9-BLR</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-13'></div>
+ <script>
+  function jsonTreeCreate13() { 
+   document.getElementById('code-block-json-13').innerHTML = JSONTree.create({
+    "candles": [
+        [
+            1716003900,
+            822,
+            822,
+            819.2,
+            821.5,
+            356280
+        ],
+        [
+            1716005700,
+            821.5,
+            821.85,
+            820.05,
+            820.4,
+            149610
+        ],
+        [
+            1716011100,
+            822,
+            822,
+            820.45,
+            820.85,
+            157589
+        ],
+        [
+            1716012900,
+            821,
+            821.5,
+            820.5,
+            820.75,
+            162376
+        ],
+        [
+            1716014700,
+            821,
+            821.6,
+            820.65,
+            821.5,
+            133026
+        ],
+        [
+            1716263100,
+            821,
+            828.45,
+            819.6,
+            826.25,
+            2540904
+        ],
+        [
+            1716264900,
+            826,
+            832.15,
+            824.55,
+            831.3,
+            2383179
+        ],
+        [
+            1716266700,
+            831.4,
+            836.3,
+            828.1,
+            828.9,
+            1991896
+        ],
+        [
+            1716268500,
+            828.7,
+            831.5,
+            827.35,
+            831.35,
+            733264
+        ],
+        [
+            1716270300,
+            831.35,
+            832.85,
+            830.6,
+            831.8,
+            537966
+        ],
+        [
+            1716272100,
+            832,
+            833,
+            830.7,
+            832.4,
+            471031
+        ],
+        [
+            1716273900,
+            832.2,
+            833.95,
+            830.5,
+            833.75,
+            451976
+        ],
+        [
+            1716275700,
+            833.8,
+            834.8,
+            832.5,
+            834.4,
+            570020
+        ],
+        [
+            1716277500,
+            834.4,
+            834.5,
+            830.7,
+            831.7,
+            586814
+        ],
+        [
+            1716279300,
+            831.55,
+            833.3,
+            831.5,
+            832.85,
+            479579
+        ],
+        [
+            1716281100,
+            832.7,
+            833.1,
+            831.5,
+            832.3,
+            583179
+        ],
+        [
+            1716282900,
+            832.15,
+            832.45,
+            827.55,
+            830.4,
+            1467009
+        ],
+        [
+            1716284700,
+            830.35,
+            832.2,
+            829.05,
+            830.5,
+            1233982
+        ],
+        [
+            1716349500,
+            826.55,
+            826.65,
+            818.8,
+            819.7,
+            5090751
+        ],
+        [
+            1716351300,
+            819.75,
+            821.7,
+            816.25,
+            820.4,
+            1597324
+        ],
+        [
+            1716353100,
+            820.5,
+            820.85,
+            816.9,
+            818,
+            1071431
+        ],
+        [
+            1716354900,
+            817.85,
+            818.35,
+            815.1,
+            816.3,
+            1245000
+        ],
+        [
+            1716356700,
+            816.25,
+            816.8,
+            813.55,
+            815.65,
+            1096281
+        ],
+        [
+            1716358500,
+            815.65,
+            818.9,
+            815.2,
+            818.55,
+            725285
+        ],
+        [
+            1716360300,
+            818.55,
+            820,
+            816.45,
+            816.75,
+            675542
+        ],
+        [
+            1716362100,
+            816.75,
+            818.05,
+            815.75,
+            816.55,
+            631930
+        ],
+        [
+            1716363900,
+            816.65,
+            818.5,
+            815.1,
+            815.95,
+            793855
+        ],
+        [
+            1716365700,
+            815.9,
+            819.45,
+            815.3,
+            817.45,
+            1445160
+        ],
+        [
+            1716367500,
+            817.35,
+            819.7,
+            817,
+            819.15,
+            868966
+        ],
+        [
+            1716369300,
+            819.2,
+            819.7,
+            815.5,
+            819.1,
+            2740809
+        ],
+        [
+            1716371100,
+            819.1,
+            820.4,
+            818.4,
+            818.75,
+            1249165
+        ]
+    ],
+    "code": 200,
+    "message": "",
+    "s": "ok"
+}); 
+  }
+  jsonTreeCreate13();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>historyApiTest is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="HoldingsAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: holdingsApiTest</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:099</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: holdingsApiTest</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:00:099</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HoldingsAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/api/v3/holdings</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:21 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With, version</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE, PATCH</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=cFeYJN4fEtduYuEl9fiBouKVwm245gQALz74JxahLXY-1716435081-1.0.1.1-gfMwaMArEZ1h.B6Ik3J1Rn9LaDPclkVAtmj.i2B37R4Y5egAaw3AgIrc_n0H89m_RFxmmoeXvkEpWUN5IDnVQw; path=/; expires=Thu, 23-May-24 04:01:21 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8face8b1d91-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-15'></div>
+ <script>
+  function jsonTreeCreate15() { 
+   document.getElementById('code-block-json-15').innerHTML = JSONTree.create({
+    "code": 200,
+    "message": "",
+    "s": "ok",
+    "overall": {
+        "count_total": 1,
+        "pnl_perc": -1.7094,
+        "total_current_value": 23,
+        "total_investment": 23.4,
+        "total_pl": -0.3999999999999986
+    },
+    "holdings": [
+        {
+            "costPrice": 23.4,
+            "id": 0,
+            "fyToken": "101000000011915",
+            "symbol": "NSE:YESBANK-EQ",
+            "isin": "INE528G01035",
+            "quantity": 1,
+            "exchange": 10,
+            "segment": 10,
+            "qty_t1": 0,
+            "remainingQuantity": 1,
+            "collateralQuantity": 0,
+            "remainingPledgeQuantity": 1,
+            "pl": -0.3999999999999986,
+            "ltp": 23,
+            "marketVal": 23,
+            "holdingType": "HLD"
+        }
+    ]
+}); 
+  }
+  jsonTreeCreate15();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>holdingsApiTest is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="OrdersAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: ordersApiEquityLimitOrderTest</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:126</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: ordersApiEquityLimitOrderTest</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:00:126</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OrdersAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/api/v3/orders/sync</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-16'></div>
+ <script>
+  function jsonTreeCreate16() { 
+   document.getElementById('code-block-json-16').innerHTML = JSONTree.create({"symbol":"NSE:EASEMYTRIP-EQ","side":1,"stopPrice":0,"offlineOrder":false,"limitPrice":15,"qty":1,"disclosedQty":0,"validity":"DAY","type":1,"productType":"INTRADAY"}); 
+  }
+  jsonTreeCreate16();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:21 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With, version</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE, PATCH</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=WsaznDzf.N7o6_5jcjXcOUXbE1PWtmfJDCl3wzUAYr0-1716435081-1.0.1.1-CD.fJ6PDAPJFJm1nTysYR20vXf.26xDUUqwOxH7jDdQ5VNaFX31xF1st.ZGMH8MQquZZAIiKy8n2rBmDN.huYw; path=/; expires=Thu, 23-May-24 04:01:21 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8fb6e961d14-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-17'></div>
+ <script>
+  function jsonTreeCreate17() { 
+   document.getElementById('code-block-json-17').innerHTML = JSONTree.create({
+    "code": -99,
+    "message": "RED:RULE:{Check circuit limit including square off order}Current:INR 15.00 LowerCircuit:INR 36.50 UpperCircuit:INR 54.70:NSE.EASEMYTRIP-EQ for C-YV02791 [FYERS_RISK_CUG]",
+    "s": "error",
+    "id": "24052300001226"
+}); 
+  }
+  jsonTreeCreate17();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>ordersApiEquityLimitOrderTest is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="OrdersAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: ordersApiEquityTest</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:157</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: ordersApiEquityTest</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:00:157</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OrdersAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/api/v3/orders/sync</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-18'></div>
+ <script>
+  function jsonTreeCreate18() { 
+   document.getElementById('code-block-json-18').innerHTML = JSONTree.create({"symbol":"NSE:YESBANK-EQ","side":1,"stopPrice":0,"offlineOrder":false,"limitPrice":0,"qty":1,"disclosedQty":0,"validity":"DAY","type":2,"productType":"INTRADAY"}); 
+  }
+  jsonTreeCreate18();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:21 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With, version</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE, PATCH</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=Oohpi0QP2SnncwDNjZPnW8xLtHa5UCnjvlfmvirHLLo-1716435081-1.0.1.1-Hqg6MLxFI9yKItgTjdtRC7NkD01CVjdezmqboTzpnEADhjunTgdaX0OTXzeUMgAovstoy49KORFkyyfue0yq4g; path=/; expires=Thu, 23-May-24 04:01:21 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8fc3fa91d89-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-19'></div>
+ <script>
+  function jsonTreeCreate19() { 
+   document.getElementById('code-block-json-19').innerHTML = JSONTree.create({
+    "code": -99,
+    "message": "RED:Block Type:ALL Reason:Market orders not allowed during Pre Open session[ FYERS NSE MKT ]",
+    "s": "error",
+    "id": "24052300001227"
+}); 
+  }
+  jsonTreeCreate19();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>ordersApiEquityTest is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="OrdersAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: ordersApiFuturesTest</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:137</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: ordersApiFuturesTest</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:00:137</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OrdersAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/api/v3/orders/sync</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-20'></div>
+ <script>
+  function jsonTreeCreate20() { 
+   document.getElementById('code-block-json-20').innerHTML = JSONTree.create({"symbol":"NSE:NIFTY24MAYFUT","side":1,"stopPrice":0,"offlineOrder":false,"limitPrice":0,"qty":50,"disclosedQty":0,"validity":"DAY","type":2,"productType":"INTRADAY"}); 
+  }
+  jsonTreeCreate20();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:21 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With, version</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE, PATCH</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=p8jv3FslB4xVHI0CuVdK0.XDLNbul39TmJwzDDTedWY-1716435081-1.0.1.1-0Nf4g_RL.yr7EgSl6_xVhX50P7P7zarBgLztj9D02jHuZCacIM1em3EXeXTBpjTAaNrF8NnQOGiBbZcvOtUs9w; path=/; expires=Thu, 23-May-24 04:01:21 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8fd4b7a1d35-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-21'></div>
+ <script>
+  function jsonTreeCreate21() { 
+   document.getElementById('code-block-json-21').innerHTML = JSONTree.create({
+    "code": -99,
+    "message": "ORA:Exchange NFO not enabled for Account YV02791 Or No PCode if its NRI account !!",
+    "s": "error",
+    "id": "24052300001228"
+}); 
+  }
+  jsonTreeCreate21();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>ordersApiFuturesTest is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="OrdersAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: ordersApiMcxTest</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:152</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: ordersApiMcxTest</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:00:152</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OrdersAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/api/v3/orders/sync</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: POST</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr><tr><td>Content-Type</td><td>text/plain; charset=ISO-8859-1</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-22'></div>
+ <script>
+  function jsonTreeCreate22() { 
+   document.getElementById('code-block-json-22').innerHTML = JSONTree.create({"symbol":"MCX:GOLDPETAL24MAYFUT","side":1,"stopPrice":0,"offlineOrder":false,"limitPrice":0,"qty":1,"disclosedQty":0,"validity":"DAY","type":2,"productType":"INTRADAY"}); 
+  }
+  jsonTreeCreate22();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:22 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With, version</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE, PATCH</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=RnHiiTe.D6UxCe3ZhFSdkW6h94PqRJlwoKkugAA59Io-1716435082-1.0.1.1-kabFjsOcpUhdXkRAGn.7eKBmU7r6ew91Bi1Ticcind4pYRCr3guE6H101NnUlf78DnJfI5v1ZuAc2jIqF0SFyA; path=/; expires=Thu, 23-May-24 04:01:22 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8fe186a1d8d-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-23'></div>
+ <script>
+  function jsonTreeCreate23() { 
+   document.getElementById('code-block-json-23').innerHTML = JSONTree.create({
+    "code": -99,
+    "message": "ORA:Exchange MCX not enabled for Account YV02791 Or No PCode if its NRI account !!",
+    "s": "error",
+    "id": "24052300001230"
+}); 
+  }
+  jsonTreeCreate23();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>ordersApiMcxTest is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="QuotesAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: quotesApiTestWithDataProvider</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:095</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: quotesApiTestWithDataProvider</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-default'>00:00:00:095</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QuotesAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/data/quotes</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {symbols=NSE:SBIN-EQ}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:22 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=E02KqmqVXMtYp0bH_f9gombQyzUht97r9zzdrzAuDNo-1716435082-1.0.1.1-fillIxIU4bWr_tdph.nNo7Q.kjHjMaXJtpeSTzXPC_UmNEXk5uHGMXTuCIkeNLL9eB1xprvIWRvddGjre4y.4w; path=/; expires=Thu, 23-May-24 04:01:22 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8fefdb51da9-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:21 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-25'></div>
+ <script>
+  function jsonTreeCreate25() { 
+   document.getElementById('code-block-json-25').innerHTML = JSONTree.create({
+    "message": "",
+    "code": 200,
+    "d": [
+        {
+            "n": "NSE:SBIN-EQ",
+            "v": {
+                "ask": 777.85,
+                "bid": 900,
+                "chp": 0,
+                "ch": 0,
+                "description": "NSE:SBIN-EQ",
+                "exchange": "NSE",
+                "fyToken": "10100000003045",
+                "high_price": 818.75,
+                "low_price": 818.75,
+                "lp": 818.75,
+                "open_price": 826.1,
+                "original_name": "NSE:SBIN-EQ",
+                "prev_close_price": 818.75,
+                "short_name": "SBIN-EQ",
+                "spread": -122.15,
+                "symbol": "NSE:SBIN-EQ",
+                "tt": "1716422400",
+                "volume": 0
+            },
+            "s": "ok"
+        }
+    ],
+    "s": "ok"
+}); 
+  }
+  jsonTreeCreate25();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:21 am</td>
+        <td>
+          <span class='badge white-text green'>quotesApiTestWithDataProvider is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="QuotesAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: quotesApiTestWithDataProvider</p>
+            <p class="text-sm">
+              <span>9:01:21 am</span> / <span>00:00:00:090</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: quotesApiTestWithDataProvider</h5>
+<span class='badge badge-success'>05.23.2024 9:01:21 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:22 am</span>
+<span class='badge badge-default'>00:00:00:090</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QuotesAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/data/quotes</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {symbols=NSE:TATAMOTORS-EQ}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:22 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=qJHkkpLlABrWlLHatdKYbCWbIf4C8.bAuOTSH.3Z7J8-1716435082-1.0.1.1-XtsSxsDxYHI9M1LzJxDl2vZNV5HOKgEqRMIbKcc3pA5XbnPS79dKkq0xhoLnsPzBM0eu5tPjifM42DwpmOruNA; path=/; expires=Thu, 23-May-24 04:01:22 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f8ff8ad61d91-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-27'></div>
+ <script>
+  function jsonTreeCreate27() { 
+   document.getElementById('code-block-json-27').innerHTML = JSONTree.create({
+    "message": "",
+    "code": 200,
+    "d": [
+        {
+            "n": "NSE:TATAMOTORS-EQ",
+            "v": {
+                "ask": 900.15,
+                "bid": 1006,
+                "chp": 0.05,
+                "ch": 0.45,
+                "description": "NSE:TATAMOTORS-EQ",
+                "exchange": "NSE",
+                "fyToken": "10100000003456",
+                "high_price": 947.5,
+                "low_price": 947.5,
+                "lp": 947.95,
+                "open_price": 947.5,
+                "original_name": "NSE:TATAMOTORS-EQ",
+                "prev_close_price": 947.5,
+                "short_name": "TATAMOTORS-EQ",
+                "spread": -105.85,
+                "symbol": "NSE:TATAMOTORS-EQ",
+                "tt": "1716422400",
+                "volume": 0
+            },
+            "s": "ok"
+        }
+    ],
+    "s": "ok"
+}); 
+  }
+  jsonTreeCreate27();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text green'>quotesApiTestWithDataProvider is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="QuotesAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: quotesApiTestWithDataProvider</p>
+            <p class="text-sm">
+              <span>9:01:22 am</span> / <span>00:00:00:073</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: quotesApiTestWithDataProvider</h5>
+<span class='badge badge-success'>05.23.2024 9:01:22 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:22 am</span>
+<span class='badge badge-default'>00:00:00:073</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QuotesAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/data/quotes</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {symbols=NSE:AXISBANK-EQ}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:22 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=PCeA2jzoZH.z77JG_A93OCxX6rCvRGlRV7xGyQIoBYc-1716435082-1.0.1.1-R0TDmzLEVXUUrYRBEdYVs7_afvDU1PXh3ijiKnyvz7eOFv_xJFrEnxfWmb3V5POZG6ZDUubbG.1zix9N_k46cA; path=/; expires=Thu, 23-May-24 04:01:22 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f9001c921d29-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-29'></div>
+ <script>
+  function jsonTreeCreate29() { 
+   document.getElementById('code-block-json-29').innerHTML = JSONTree.create({
+    "message": "",
+    "code": 200,
+    "d": [
+        {
+            "n": "NSE:AXISBANK-EQ",
+            "v": {
+                "ask": 1069.7,
+                "bid": 1238.6,
+                "chp": 0.48,
+                "ch": 5.4,
+                "description": "NSE:AXISBANK-EQ",
+                "exchange": "NSE",
+                "fyToken": "10100000005900",
+                "high_price": 1126,
+                "low_price": 1126,
+                "lp": 1131.4,
+                "open_price": 1126,
+                "original_name": "NSE:AXISBANK-EQ",
+                "prev_close_price": 1126,
+                "short_name": "AXISBANK-EQ",
+                "spread": -168.9,
+                "symbol": "NSE:AXISBANK-EQ",
+                "tt": "1716422400",
+                "volume": 0
+            },
+            "s": "ok"
+        }
+    ],
+    "s": "ok"
+}); 
+  }
+  jsonTreeCreate29();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text green'>quotesApiTestWithDataProvider is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="QuotesAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: quotesApiTestWithDataProvider</p>
+            <p class="text-sm">
+              <span>9:01:22 am</span> / <span>00:00:00:093</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: quotesApiTestWithDataProvider</h5>
+<span class='badge badge-success'>05.23.2024 9:01:22 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:22 am</span>
+<span class='badge badge-default'>00:00:00:093</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QuotesAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/data/quotes</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {symbols=BSE:HCLTECH-A}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:22 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=OWaQsYFadX8H8AbzMtZWzKZPcylc9J1gbzQIpWmjI84-1716435082-1.0.1.1-B.iNnoMqdYHLtepk8_dX_Zo2Br5prd0ICXFWIVg33bKCZcte_VSs9.2LOjONIa1tU2tK9dphl9yDTm6.7fZ_1A; path=/; expires=Thu, 23-May-24 04:01:22 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f900afa11da9-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-31'></div>
+ <script>
+  function jsonTreeCreate31() { 
+   document.getElementById('code-block-json-31').innerHTML = JSONTree.create({
+    "message": "",
+    "code": 200,
+    "d": [
+        {
+            "n": "BSE:HCLTECH-A",
+            "v": {
+                "ask": 1316.1,
+                "bid": 1405,
+                "chp": 0,
+                "ch": 0,
+                "description": "BSE:HCLTECH-A",
+                "exchange": "BSE",
+                "fyToken": "1210000000532281",
+                "high_price": 1343.1,
+                "low_price": 1343.1,
+                "lp": 1343.1,
+                "open_price": 1343.1,
+                "original_name": "BSE:HCLTECH-A",
+                "prev_close_price": 1343.1,
+                "short_name": "HCLTECH-A",
+                "spread": -88.9,
+                "symbol": "BSE:HCLTECH-A",
+                "tt": "1716422400",
+                "volume": 0
+            },
+            "s": "ok"
+        }
+    ],
+    "s": "ok"
+}); 
+  }
+  jsonTreeCreate31();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text green'>quotesApiTestWithDataProvider is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="QuotesAPI"
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Name: quotesApiTestWithDataProvider</p>
+            <p class="text-sm">
+              <span>9:01:22 am</span> / <span>00:00:00:081</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Name: quotesApiTestWithDataProvider</h5>
+<span class='badge badge-success'>05.23.2024 9:01:22 am</span>
+<span class='badge badge-danger'>05.23.2024 9:01:22 am</span>
+<span class='badge badge-default'>00:00:00:081</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">QuotesAPI</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Endpoint: https://api-t1.fyers.in/data/quotes</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>API Method: GET</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Authorization</td><td>E30OQX14VP-100:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE3MTY0MzUwODEsImV4cCI6MTcxNjUxMDYyMSwibmJmIjoxNzE2NDM1MDgxLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCbVRyaUp0d2M5cXN5UHpaYTdETHN3OE9sWTM2NFlVRmxLMzFUNDdBZTFsRVU0VVBiNHdoYUF4VlBscElnZXV6S0dJSFVxV3I4NEVseUI5Sko4UjQwVnFjZzBiMkQ4UmZKOEMxMXBTVVVMZHE3Tmp3dz0iLCJkaXNwbGF5X25hbWUiOiJWUlVTSEFCRU5EUkEgUlVEUkFZWUEgQ0hJS0tBTUFUSCIsIm9tcyI6IksxIiwiaHNtX2tleSI6IjJlMjAzMDA5ZDg3NGE2Yjc1MTgxN2ZjNTMzZDVmYmZiMjFhNjFiMjkwNWU3M2E3YmFjYjY0M2RlIiwiZnlfaWQiOiJZVjAyNzkxIiwiYXBwVHlwZSI6MTAwLCJwb2FfZmxhZyI6Ik4ifQ.taZre-WHEsQ4Yi4h7HygwqbNQ6aX1hmU6NAOb1obEsg</td></tr><tr><td>Accept</td><td>*/*</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Request Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Headers: {symbols=BSE:HEROMOTOCO-A}</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Status: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Headers: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <table class='markup-table table '><tr><td>Date</td><td>Thu, 23 May 2024 03:31:22 GMT</td></tr><tr><td>Content-Type</td><td>application/json</td></tr><tr><td>Transfer-Encoding</td><td>chunked</td></tr><tr><td>Connection</td><td>keep-alive</td></tr><tr><td>Access-Control-Allow-Credentials</td><td>true</td></tr><tr><td>Access-Control-Allow-Headers</td><td>Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With</td></tr><tr><td>Access-Control-Allow-Methods</td><td>POST, OPTIONS, GET, PUT, DELETE</td></tr><tr><td>Access-Control-Allow-Origin</td><td>*</td></tr><tr><td>Content-Security-Policy</td><td>default-src 'none'</td></tr><tr><td>X-Content-Type-Options</td><td>nosniff</td></tr><tr><td>CF-Cache-Status</td><td>DYNAMIC</td></tr><tr><td>Set-Cookie</td><td>__cf_bm=dr8pZ26P50di0B95IFL0ZVxUgFe3qEu1zaSn8.5HUJg-1716435082-1.0.1.1-CIKN426nxj1xwWUkbDDqklJwEJgZESMCCfvH06ah2oFyt_PnYwHIq8opPySp23hYSEJUTKQYSvv_zsE9Njc1yQ; path=/; expires=Thu, 23-May-24 04:01:22 GMT; domain=.fyers.in; HttpOnly; Secure; SameSite=None</td></tr><tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr><tr><td>Server</td><td>cloudflare</td></tr><tr><td>CF-RAY</td><td>8881f9013d2a1d89-BLR</td></tr><tr><td>Content-Encoding</td><td>gzip</td></tr></table>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text blue'>Response Body: </span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:01:22 am</td>
+        <td>
+           <div class='json-tree' id='code-block-json-33'></div>
+ <script>
+  function jsonTreeCreate33() { 
+   document.getElementById('code-block-json-33').innerHTML = JSONTree.create({
+    "message": "",
+    "code": 200,
+    "d": [
+        {
+            "n": "BSE:HEROMOTOCO-A",
+            "v": {
+                "ask": 4893.1,
+                "bid": 5095.95,
+                "chp": 0,
+                "ch": 0,
+                "description": "BSE:HEROMOTOCO-A",
+                "exchange": "BSE",
+                "fyToken": "1210000000500182",
+                "high_price": 4996,
+                "low_price": 4996,
+                "lp": 4996,
+                "open_price": 4950,
+                "original_name": "BSE:HEROMOTOCO-A",
+                "prev_close_price": 4996,
+                "short_name": "HEROMOTOCO-A",
+                "spread": -202.85,
+                "symbol": "BSE:HEROMOTOCO-A",
+                "tt": "1716422400",
+                "volume": 0
+            },
+            "s": "ok"
+        }
+    ],
+    "s": "ok"
+}); 
+  }
+  jsonTreeCreate33();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:01:22 am</td>
+        <td>
+          <span class='badge white-text green'>quotesApiTestWithDataProvider is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">HistoryAPI</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>HistoryAPI</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Test Name: historyApiTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">DepthAPI</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>DepthAPI</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:19 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Test Name: depthApiTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">QuotesAPI</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>QuotesAPI</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Test Name: quotesApiTestWithDataProvider</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Test Name: quotesApiTestWithDataProvider</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:22 am</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Test Name: quotesApiTestWithDataProvider</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:22 am</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Test Name: quotesApiTestWithDataProvider</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:22 am</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Test Name: quotesApiTestWithDataProvider</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">OrdersAPI</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>OrdersAPI</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Test Name: ordersApiEquityLimitOrderTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Test Name: ordersApiEquityTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Test Name: ordersApiFuturesTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Test Name: ordersApiMcxTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">HoldingsAPI</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>HoldingsAPI</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:01:21 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Test Name: holdingsApiTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 23, 2024 09:01:19 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 23, 2024 09:01:22 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>12</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>12</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='5%'><b>12</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>204</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Test Name: depthApiTest":1.692,"Test Name: historyApiTest":0.137,"Test Name: holdingsApiTest":0.099,"Test Name: ordersApiEquityLimitOrderTest":0.126,"Test Name: ordersApiEquityTest":0.157,"Test Name: ordersApiFuturesTest":0.137,"Test Name: ordersApiMcxTest":0.152,"Test Name: quotesApiTestWithDataProvider":0.095,"Test Name: quotesApiTestWithDataProvider":0.09,"Test Name: quotesApiTestWithDataProvider":0.073,"Test Name: quotesApiTestWithDataProvider":0.093,"Test Name: quotesApiTestWithDataProvider":0.081
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>HistoryAPI</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>DepthAPI</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>QuotesAPI</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>OrdersAPI</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>HoldingsAPI</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 12,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 12,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 204
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
